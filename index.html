@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>TODO List</h1>
+    <div class="list-container">
+        <h1>My Tasks</h1>
+        <div class="row">
+            <div class="sideBar">
+                <button id="all-tasks" class="active">All Tasks</button>
+                <button id="completed-tasks">Completed</button>
+                <button id="pending-tasks">Pending</button>
+            </div>
+            <div class="mainContent">
+                <h2 id="task-count">0 Tasks</h2>
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Add a new task...">
+                    <button id="add-button">Add</button>
+                </div>
+                <table id="todo-list">
+                    <thead>
+                        <tr>
+                            <th>Task Name</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">No tasks available</td>
+                            <td><button>Delete</button></td>
+                            <td><button>Add</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
